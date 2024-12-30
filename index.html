@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>turismo bucalemu</title>
+    <title>Turismo Bucalemu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,10 +11,12 @@
             padding: 0;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            background-image: url('https://serviciosturisticos.sernatur.cl/folder/empresas/emp_79845880/inscripcion_9452/phprCVM0k.jpg');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 400px 245px;
+            height: 100px;
+            margin: 0 auto;
         }
         nav {
             display: flex;
@@ -31,81 +33,94 @@
             background-color: #ddd;
             color: black;
         }
-        section {
-            padding: 20px;
-        }
         .banner {
-            background-image: url('https://via.placeholder.com/1200x400');
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/09/07/05/sea-931164_1280.jpg');
             background-size: cover;
+            background-position: center;
             color: white;
             text-align: center;
             padding: 50px 20px;
+            height: 350px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
         }
         .banner h1 {
-            font-size: 2.5em;
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 40px;
         }
-        footer {
-            background-color: #333;
-            color: white;
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+        }
+        .single-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flex-item {
+            width: 70%;
+            margin-bottom: 20px;
+        }
+        #contacto {
+            border: none;
+            border-top: 3px solid green;
+            background-color: #e0f8e0;
+            color: #004d00;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 1.2em;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Turismo Bucalemu</h1>
-        <p>Explora el mundo con nosotros</p>
-    </header>
+    <header></header>
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#destinos">Destinos</a>
-        <a href="#utilidades">Utilidades</a>
         <a href="#viajes-tercera-edad">Viajes Tercera Edad</a>
         <a href="#contacto">Contacto</a>
     </nav>
     <div class="banner">
         <h1>Tu próxima aventura comienza aquí</h1>
-        <p>Ofertas exclusivas para tus viajes soñados</p>
     </div>
-    <section id="inicio">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos una agencia comprometida con hacer de tus viajes una experiencia inolvidable. Ofrecemos atención personalizada y las mejores ofertas del mercado.</p>
-    </section>
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Reservas de vuelos</li>
-            <li>Hoteles y alojamientos</li>
-            <li>Paquetes turísticos</li>
-            <li>Asistencia al viajero</li>
-        </ul>
-    </section>
-    <section id="destinos">
-        <h2>Destinos</h2>
-        <p>Explora destinos populares como París, Nueva York, Tokio y más.</p>
-    </section>
-    <section id="utilidades">
-        <h2>Utilidades</h2>
-        <ul>
-            <li>Conversor de monedas</li>
-            <li>Clima en tiempo real</li>
-            <li>Recomendaciones de equipaje</li>
-        </ul>
-    </section>
-    <section id="viajes-tercera-edad">
-        <h2>Viajes Tercera Edad</h2>
-        <p>Ofrecemos paquetes diseñados especialmente para adultos mayores, con destinos tranquilos y actividades adecuadas para ellos.</p>
-    </section>
+    <div class="single-column">
+        <section id="inicio" class="flex-item">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una agencia de viaje con una trayectoria de 30 años en el rubro. Ofrecemos una atención personalizada a nuestros clientes. Contamos con la aprobación de SERNATUR para brindarles un viaje de calidad.</p>
+        </section>
+        <section id="servicios" class="flex-item">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Venta de pasajes</li>
+                <li>Viajes en cruceros</li>
+                <li>Reserva de hoteles</li>
+                <li>Seguros de asistencia en viaje</li>
+                <li>Programas del adulto mayor</li>
+            </ul>
+        </section>
+        <section id="destinos" class="flex-item">
+            <h2>Destinos</h2>
+            <p>Contamos con programas turísticos nacionales e internacionales.</p>
+        </section>
+        <section id="viajes-tercera-edad" class="flex-item">
+            <h2><a href="https://vacacionesterceraedad.cl/" target="_blank">Viajes Tercera Edad</a></h2>
+        </section>
+    </div>
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Email: tbucalemu06@gmail.com</p>
-        <p>Teléfono: +123 456 789</p>
-        <p>Visítanos en nuestras oficinas para más información.</p>
+        <p>Teléfono: 752312089</p>
+        <p>Visítanos en nuestra oficina ubicada en Curicó, en Yungay 737 oficina 6.<br>
+        Horario de atención: lunes a viernes de 10:00 a 16:00 horas, horario continuado.</p>
     </section>
 </body>
 </html>
